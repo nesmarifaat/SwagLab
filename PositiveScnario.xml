@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="browser" value=""/>
+
+
+    <test name="Click on add to cart button for all products">
+        <classes>
+            <class name="testcases.TC01_E2EPurchaseFlow">
+                <methods>
+                    <include name="addproductstocart_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value=""/>
+  <test thread-count="5" name="Click on add to cart button for all products(failed)">
+    <classes>
+      <class name="testcases.TC01_E2EPurchaseFlow">
+        <methods>
+          <include name="addproductstocart_P"/>
+          <include name="getResult"/>
+          <include name="defineSuite"/>
+          <include name="endSuite"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.TC01_E2EPurchaseFlow -->
+    </classes>
+  </test> <!-- Click on add to cart button for all products(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

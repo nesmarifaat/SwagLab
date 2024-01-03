@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SwagLabs(failed)">
+    <classes>
+      <class name="testcases.TC001_Login">
+        <methods>
+          <include name="loginwithvaliddata_P"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.TC001_Login -->
+    </classes>
+  </test> <!-- SwagLabs(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
