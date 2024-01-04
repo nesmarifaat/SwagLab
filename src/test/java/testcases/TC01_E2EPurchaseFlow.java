@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.*;
+import retrytest.Retry;
 
 import static utilities.Utility.captureScreenshot;
 import static utilities.Utility.generateDescription;
@@ -16,7 +17,7 @@ public class TC01_E2EPurchaseFlow extends TestBase {
     String lastname = faker.name().lastName();
     String postalcode = faker.address().zipCode();
 
-    @Test(priority = 1, description = "Add All Products to Cart")
+    @Test(priority = 1, description = "Add All Products to Cart", retryAnalyzer = Retry.class)
     public void addproductstocart_P() throws InterruptedException {
 
         new P01_Login(driver).fillusername(username).fillpassword(password).clickonloginbutton();
